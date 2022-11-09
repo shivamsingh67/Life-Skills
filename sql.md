@@ -1,7 +1,7 @@
-                                                            SQL
-SQL is structured(fixed data model or fixed schema) query langiage use to communicate between the user  and data 
-# SQL commands-
-## 1. DDL 
+# SQL
+SQL is structured(fixed data model or fixed schema) query langiage use to communicate between the user and data.
+## SQL commands-
+### 1. DDL 
 The DDL Commands are used to create and modify the schema of the database and its objects. The commands of Data Definition Language deal with how the data should exist in the database.
 
 DDL  (Data definition languge)
@@ -14,7 +14,7 @@ DDL  (Data definition languge)
 	rename (rename the structure)
 }
 
-## 2. DML(Data Manipulate Language) :
+### 2. DML(Data Manipulate Language) 
 
 DML is use to manipulate the data of the table, such as insert into the table ,delete from the table and update from the table etc.
 after creating structure for performing retrive, delete, update, insert we use DML commands.
@@ -31,7 +31,7 @@ DML (Data manipulation language)
 Who user can fetch the data we give them grant means which types of grant we have to give
 like he can view or insert or delete update etc.
 
-## 3. DCL :
+### 3. DCL 
 DCL includes commands such as GRANT and REVOKE which mainly deal with the rights, permissions, and other controls of the database system. 
 -DCL (Data Control Language)
 {
@@ -40,10 +40,10 @@ DCL includes commands such as GRANT and REVOKE which mainly deal with the rights
 	Revoke
 
 }
-## 4. TCL() : 
+### 4. TCL 
 It use to manage the transaction of the database like commit ,rollback,savepoint etc.
 
--TCL (Transation Control Language)
+TCL (Transation Control Language)
 {
 
 	Commit (commit is use to save the manipulated  changes permanently.)
@@ -51,22 +51,23 @@ It use to manage the transaction of the database like commit ,rollback,savepoint
 	Save Point (savepoint is a point of transation where we can check the transaction back.)
 }
 
-## Constrains
-{
+### Constrains
 
-	Primary Key
-	foreign key
-	Check
-	Unique
-	Default
-	Not Null
-}
+
+  <li> Primary Key
+  <li> foreign key
+  <li> Check
+  <li> Unique
+  <li> Default
+  <li> Not Null
+
+
 
 ------------------------------------
 
 
-# DDL
-----1. create----
+## DDL
+<li> 1. create
 
 create table TABLE_NAME
 (
@@ -86,7 +87,7 @@ create table emp(
 );
 desc emp;
 
------2. Alter----------
+<li> 2. Alter
 
 change something in schems(structure)
 
@@ -129,7 +130,7 @@ alter table employee rename to emplo
 desc employee //object does not exist
 desc emplo
 
-#Constrains in sql
+## Constrains in sql
 
 Constrains means condition- we want to add some conditions so that in that way user should perform operations
 we will apply condition based on column(attribute col ka hi naam h)
@@ -151,7 +152,7 @@ we will apply condition based on column(attribute col ka hi naam h)
    Example - Salary int default 10000;
 
 
-#Aggrigate functions in Sql
+## Aggrigate functions in Sql
 
 
 emp
@@ -169,38 +170,43 @@ emp
 Aggrigate functions in Sql  
 Max, Min, Count, Avg, Sum
 
-##1.Max - it will find the maximum value of the paticular column.
+### 1.Max
+it will find the maximum value of the paticular column.
 Example
 
 find maximum salary from emp table .
    select Max(salary) from emp;  // Output-50000
 
-##2.Min - it will find the minimum value of the particular column.
+### 2.Min  
+it will find the minimum value of the particular column.
 Example-
 
 	   find minimum salary from emp table.
 	   select min(salary) from emp;  //Output-10000  
 
-##3.Count - It will count the total number of value of the column. 
+### 3.Count 
+It will count the total number of value of the column. 
 
         select count(*) from emp;  //6  total 6 rows are there in table
 	select count(salary) from emp; //5 null will not be counted.
 	select Distinct(count(salary)) from emp;  //4 unique values from salary ka count.
 
-##4.Avg - It will give the average value of numeric column.
+### 4.Avg 
+It will give the average value of numeric column.
 Example-find avg of salary 
 
 	  select Avg(salary) from emp;  // output - 10000  
 	  avg=sum(salary)/count(ssalary)
 
-##5.Sum - This function  return the total sum of numeric column.
+### 5.Sum 
+This function  return the total sum of numeric column.
 Example -
 
         select sum(salary) from emp;  //1,40,000  total sum of salary
 	select distinct(sum(salary)) from emp;  // it will suming up the uniquely .
 
 
-#JOINS in Sql
+# JOINS in Sql
 
 
 A SQL Join statement is used to combine data or rows from two or more tables based on a common field between them. Different types of Joins are:
@@ -364,9 +370,9 @@ OUTPUT:
 	| RIYANK|       2     |
 
 # Referance:
-1.W3school
-2.geeksforgeeks
-3.javaTpoint
+<li> W3school
+<li> Geeksforgeeks
+<li> Javatutorialspoint
 
 
 

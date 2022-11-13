@@ -370,9 +370,9 @@ OUTPUT:
 	| RIYANK|       2     |
 
 # Referance:
-<li> W3school
-<li> Geeksforgeeks
-<li> Javatutorialspoint
+<li> [W3school](https://www.w3schools.com/sql/)
+<li> [Geeksforgeeks](https://www.geeksforgeeks.org/sql-tutorial/)
+<li> [Javatutorialspoint](https://www.tutorialspoint.com/sql/sql-using-joins.htm)
 
 
 
